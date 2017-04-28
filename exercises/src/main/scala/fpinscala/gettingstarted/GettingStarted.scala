@@ -1,5 +1,7 @@
 package fpinscala.gettingstarted
 
+import fpinscala.datastructures.List
+
 // A comment!
 /* Another comment */
 /** A documentation comment */
@@ -37,10 +39,13 @@ object MyModule {
   // Exercise 1: Write a function to compute the nth fibonacci number
 
   def fib(n: Int): Int = {
-    def loop(n: Int, prev: Int, cur: Int) =
-      if (n == 0) prev
-      else loop(n - 1, cur, prev + cur)
-    loop(n, 0, 1)
+//    def loop(n: Int, prev: Int, cur: Int) =
+//      if (n == 0) prev
+//      else {
+//        loop(n - 1, cur, prev + cur)
+//      }
+//    loop(n, 0, 1)
+    ???
   }
 
   // This definition and `formatAbs` are very similar..
@@ -180,5 +185,24 @@ object PolymorphicFunctions {
 
   def compose[A,B,C](f: B => C, g: A => B): A => C =
     a => f(g(a))
-  
+
+
+  def main(args: Array[String]): Unit = {
+//    val f: (Integer, Integer) => Integer =
+//    val result: Integer = f(1,2)
+
+    def add(x: Integer)(y: Integer): Integer = x + y;
+
+    val add1: (Integer) => Integer = add(1)
+
+    println(add1)
+    println(add1(2))
+    println(add1(3))
+
+
+
+//    val curried: (Integer) => (Integer) => Integer = curry(f)
+//    val curried1: (Integer) => Integer = curried(1)
+//    val curried2: Integer = curried1(2)
+  }
 }
