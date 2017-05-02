@@ -81,14 +81,13 @@ object List { // `List` companion object. Contains functions for creating and wo
 
   def map[A,B](l: List[A])(f: A => B): List[B] = ???
 
-  def main(args: Array[String]): Unit = {
-    val x: List[Int] = List(1,2,3,4,5)
-    println(List.length(List()))
-    println(List.length(List(1,2,3)))
-
-
-    val right: (Int) => ((Int, Int) => Int) => B = foldRight(x, _)
-    val right1: ((Int, Int) => Int) => Any = right(2)
-
-  }
+//  def main(args: Array[String]): Unit = {
+//    val x: List[Int] = List(1,2,3,4,5)
+//    println(List.length(List()))
+//    println(List.length(List(1,2,3)))
+//
+//    val right: (Int) => ((Int, Int) => Int) => B = foldRight(x, _)
+//    val right1: ((Int, Int) => Int) => Any = right(2)
+//
+//  }
 }

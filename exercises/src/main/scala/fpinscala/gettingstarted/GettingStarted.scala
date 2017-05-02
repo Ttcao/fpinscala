@@ -199,8 +199,6 @@ object PolymorphicFunctions {
     println(add1(2))
     println(add1(3))
 
-
-
 //    val curried: (Integer) => (Integer) => Integer = curry(f)
 //    val curried1: (Integer) => Integer = curried(1)
 //    val curried2: Integer = curried1(2)
